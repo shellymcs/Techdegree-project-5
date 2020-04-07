@@ -16,7 +16,4 @@ $('.search').on('keyup', function(){
 
 
 
-baguetteBox.run('.baguetteBoxOne','.main-gallery', {
-captions: true,
-buttons: true
-});
+baguetteBox.run('.main-gallery');
