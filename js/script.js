@@ -15,5 +15,7 @@ $('.search').on('keyup', function(){
 });
 
 
-
-baguetteBox.run('.main-gallery');
+const baguetteBox = require('baguettebox.js');
+window.addEventListener('load', function() {
+    baguetteBox.run('.main-gallery');
+});
