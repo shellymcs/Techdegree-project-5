@@ -1,0 +1,97 @@
+/* =================================
+  Base Element Styles
+==================================== */
+
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Roboto Mono', sans-serif;
+    color: #434242;
+    font-size: 15px;
+    line-height: 1.5;
+  }
+  
+  
+  /* =================================
+  Layout Containers
+==================================== */
+
+  .main-header{
+    text-align: center;
+    font-size: 1.2em;
+    color: rgb(0, 132, 255);
+    background-color: lightgray;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'IBM Plex Serif', serif;
+}
+
+.main-footer{
+    background-color: lightgray;
+    height: 100px;
+}
+
+/* =================================
+  Search Box
+==================================== */
+
+.search-bar{
+    text-align: center;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    max-width:100%;
+    margin: 0 auto;
+}
+
+.search{
+    border-radius: 5px;
+    padding: 8px 8px 8px 5px;
+    width: 30%;
+    text-align: left;
+    box-shadow: none;
+    border: 1px solid lightgray;
+}
+
+.search::placeholder {
+    color: lightslategrey;
+    font-size: .8em;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* =================================
+  Gallery
+==================================== */
+
+.main-gallery{
+   display: flex;
+   flex-wrap: wrap;
+   width: 90%;
+   margin: 0 auto;
+   justify-content: center;
+   padding-bottom: 15px;
+  }
+
+.slide{
+   margin: 10px;
+}
+
+
+/* =================================
+  Media Queries 
+==================================== */
+
+@media (min-width: 768px){
+    .slide{
+        margin: 30px;
+    }
+}
+
+@media (min-width: 1020px){
+    .slide{
+        max-width: 80%;
+        margin: 40px;
+    }
+}
