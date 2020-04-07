@@ -3,7 +3,7 @@ let images = document.getElementsByTagName('a');
 $('.search').on('keyup', function(){
     let search = $('.search').val().toLowerCase();
     for (var i =0; i< images.length; i++) {
-        let searchVal = images[i].getAttribute('title');
+        let searchVal = images[i].getAttribute('data-caption');
     
     if (searchVal.toLowerCase().indexOf(search) > -1){
     images[i].style.display ="";
@@ -15,7 +15,6 @@ $('.search').on('keyup', function(){
 });
 
 
-const baguetteBox = require('baguettebox.js');
-window.addEventListener('load', function() {
-    baguetteBox.run('.main-gallery');
+$('[data-fancybox="gallery"]').fancybox({
+	// Options will go here
 });
